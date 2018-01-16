@@ -1,0 +1,236 @@
+button {
+  appearance: none;
+  background-color: blue;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.8em 1.6em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  button:hover, button:focus {
+    background-color: shade(blue, 20%);
+    color: #fff; }
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    button:disabled:hover {
+      background-color: blue; }
+
+a:link {
+  color: blue; }
+
+a:visited {
+  color: shade(blue, 20%); }
+
+a:hover {
+  color: green;
+  text-decoration: underline; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+dl {
+  margin-bottom: 0.8em; }
+  dl dt {
+    font-weight: 600;
+    margin-top: 0.8em; }
+  dl dd {
+    margin: 0; }
+
+table {
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid shade(#ddd, 25%);
+  font-weight: 600;
+  padding: 0.8em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.8em 0; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+html {
+  background-color: white; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  color: #444;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 1.6em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  line-height: 1.2;
+  margin: 0 0 0.8em 0; }
+
+p {
+  margin: 0 0 0.8em; }
+
+a {
+  color: blue;
+  text-decoration: none;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: shade(blue, 25%); }
+
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.6em 0; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
+blockquote {
+  font-style: italic; }
+
+#slimpop-wrapper {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.65);
+  overflow: auto;
+  padding: 1.6em;
+  margin: auto;
+  max-width: 75%;
+  max-height: 75%; }
+
+/* for the close link */
+.slimpop-close {
+  float: right; }
+
+#slimpop-overlay {
+  background: url(../images/overlay.png) repeat;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99; }
+
+/* JavaScript assigns this (or .hidden) to slimpop-container */
+.slimpop-basic {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  /* this positions the slimpop relative to viewport, it won't scroll with the page */
+  right: 0;
+  top: 0;
+  z-index: 100; }
+
+div.img-left {
+  float: left;
+  max-width: 50%;
+  padding: 0.8em 1.6em 0.8em 0; }
+  div.img-left p {
+    color: #999;
+    font-size: 0.8em; }
+
+.top-panel-nav p.previous, .btm-panel-nav p.previous {
+  float: left; }
+.top-panel-nav p.next, .btm-panel-nav p.next {
+  float: right; }
+
+.tabs ul {
+  margin-bottom: 1.6em; }
+  .tabs ul li {
+    display: inline;
+    margin: 4px 1.6em 0.8em 0; }
+    .tabs ul li a:link {
+      background-color: #ddd;
+      padding: 0.8em 1.6em; }
+      .tabs ul li a:link.selected {
+        background-color: #444; }
+
+.learn-more {
+  clear: left; }
+  .learn-more ul {
+    width: 100%; }
+    .learn-more ul li {
+      display: inline-block;
+      margin-right: 0.8em;
+      vertical-align: top;
+      width: 20%; }
+      .learn-more ul li img {
+        display: block;
+        max-width: 85%; }
+
+.home {
+  padding: 3.2em 1.6em; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-gap: 20px;
+  color: #444; }
+
+.top-panel-nav-prev {
+  grid-column: 2;
+  grid-row: 1; }
+
+.top-panel-nav-title {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: center; }
+
+.top-panel-nav-next {
+  grid-column: 4;
+  grid-row: 1;
+  text-align: right; }
+
+.btm-panel-nav {
+  grid-column: 2 / 5;
+  grid-row: 3; }
+
+.main {
+  grid-column: 2 / 5;
+  grid-row: 2; }
+
+.home-nav {
+  grid-column: 1;
+  grid-row: 1; }
+
+.panel {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4; }
+
+/*# sourceMappingURL=mural.css.map */

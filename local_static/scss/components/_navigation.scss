@@ -1,0 +1,53 @@
+// navigation
+
+// for prev/next panel nav
+
+.top-panel-nav, .btm-panel-nav {
+	p.previous {
+		float: left;
+	}
+
+	p.next {
+		float: right;
+	}
+}
+
+// for tab nav of main panel content area
+
+.tabs ul {
+	margin-bottom: $base-spacing;
+
+	li {
+		display: inline;
+		margin: 4px $base-spacing $small-spacing 0;;
+
+		a:link {
+			background-color: $light-gray;
+			padding: $small-spacing $base-spacing;
+
+			&.selected {
+				background-color: $dark-gray;				
+			}
+		}
+	}
+}
+
+.learn-more {
+	clear: left;
+
+	ul {
+		width: 100%;
+
+		li {
+			display: inline-block;
+			margin-right: $small-spacing;
+			vertical-align: top;
+			width: 20%;
+
+			img {
+				display: block;
+				max-width: 85%;
+			}
+		}
+	}
+}

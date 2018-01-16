@@ -1,0 +1,13 @@
+// image treatments
+
+// for images in the main content area
+div.img-left {
+	float: left;
+	max-width: 50%;
+	padding: $small-spacing $base-spacing $small-spacing 0;
+
+	p {
+		color: $medium-gray;
+		font-size: $small-font-size;
+	}
+}

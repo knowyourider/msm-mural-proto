@@ -18,7 +18,7 @@ robots.txt
 static/
 webstat/
 images/
-local_static/
+local_static/images
 pops/images
 
 # allow

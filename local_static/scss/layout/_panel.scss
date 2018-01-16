@@ -1,0 +1,46 @@
+// panel layout
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+  grid-template-rows: 50px 1fr 50px;
+  grid-gap: 20px;
+  color: #444;
+}
+
+.top-panel-nav-prev {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.top-panel-nav-title {
+	grid-column: 3;
+	grid-row: 1;
+	text-align: center;
+}
+
+.top-panel-nav-next {
+	grid-column: 4;
+	grid-row: 1;
+	text-align: right;
+}
+
+.btm-panel-nav {
+	grid-column: 2 / 5;
+	grid-row: 3;
+}
+
+.main {
+	grid-column: 2 / 5;
+	grid-row: 2;
+}
+
+.home-nav {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.panel {
+	grid-column: 1 / 2;
+	grid-row: 2 / 4;
+}

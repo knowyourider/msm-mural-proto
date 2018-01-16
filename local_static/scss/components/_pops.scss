@@ -1,0 +1,41 @@
+// pops
+#slimpop-wrapper {
+  background-color: $base-background-color;
+  border: $base-border;
+  box-shadow: $drop-shadow;
+  overflow: auto;
+  padding: $base-spacing;
+  margin: auto;
+  max-width: 75%;
+  max-height: 75%;
+}
+
+/* for the close link */
+.slimpop-close {
+  float: right;
+}
+
+#slimpop-overlay {
+  background: url(../images/overlay.png) repeat;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+}
+
+/* JavaScript assigns this (or .hidden) to slimpop-container */
+.slimpop-basic {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed; /* this positions the slimpop relative to viewport, it won't scroll with the page */
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
