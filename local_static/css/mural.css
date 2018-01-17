@@ -172,6 +172,17 @@ div.img-left {
     color: #999;
     font-size: 0.8em; }
 
+.show-highlight, .hide-highlight {
+  cursor: pointer; }
+
+.show-highlight {
+  fill: black;
+  fill-opacity: 0.8; }
+
+.hide-highlight {
+  fill: black;
+  fill-opacity: 0; }
+
 .top-panel-nav p.previous, .btm-panel-nav p.previous {
   float: left; }
 .top-panel-nav p.next, .btm-panel-nav p.next {

@@ -11,3 +11,18 @@ div.img-left {
 		font-size: $small-font-size;
 	}
 }
+
+// for panel hotspots
+.show-highlight, .hide-highlight {
+	cursor: pointer;
+}
+
+.show-highlight {
+  fill: black; 
+  fill-opacity: 0.8;	
+}
+
+.hide-highlight {
+  fill: black; 
+  fill-opacity: 0;	
+}
