@@ -1,4 +1,14 @@
 // pops
+
+// For popup windows
+.hidden {
+  display: none;
+}
+
+.unhidden {
+  display: block;
+}
+
 #slimpop-wrapper {
   background-color: $base-background-color;
   border: $base-border;
@@ -6,8 +16,6 @@
   overflow: auto;
   padding: $base-spacing;
   margin: auto;
-  max-width: 75%;
-  max-height: 75%;
 }
 
 /* for the close link */
@@ -38,4 +46,9 @@
   right: 0;
   top: 0;
   z-index: 100;
+}
+
+.learn-more {
+  max-width: 75%;
+  max-height: 75%;	
 }

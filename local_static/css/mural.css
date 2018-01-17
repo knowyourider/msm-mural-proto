@@ -118,15 +118,19 @@ img {
 blockquote {
   font-style: italic; }
 
+.hidden {
+  display: none; }
+
+.unhidden {
+  display: block; }
+
 #slimpop-wrapper {
   background-color: white;
   border: 1px solid #ddd;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.65);
   overflow: auto;
   padding: 1.6em;
-  margin: auto;
-  max-width: 75%;
-  max-height: 75%; }
+  margin: auto; }
 
 /* for the close link */
 .slimpop-close {
@@ -155,6 +159,10 @@ blockquote {
   right: 0;
   top: 0;
   z-index: 100; }
+
+.learn-more {
+  max-width: 75%;
+  max-height: 75%; }
 
 div.img-left {
   float: left;
