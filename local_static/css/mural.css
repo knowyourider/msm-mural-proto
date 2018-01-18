@@ -196,6 +196,11 @@ div.img-table {
   fill: black;
   fill-opacity: 0; }
 
+.mural-panel-target {
+  fill: red;
+  fill-opacity: 0.075;
+  cursor: pointer; }
+
 .top-panel-nav p.previous, .btm-panel-nav p.previous {
   float: left; }
 .top-panel-nav p.next, .btm-panel-nav p.next {
@@ -205,12 +210,11 @@ div.img-table {
   margin-bottom: 1.6em; }
   .tabs ul li {
     display: inline;
-    margin: 4px 1.6em 0.8em 0; }
-    .tabs ul li a:link {
-      background-color: #ddd;
-      padding: 0.8em 1.6em; }
+    margin: 4px 1.6em 0.8em 0;
+    background-color: #ddd;
+    padding: 0.8em 1.6em; }
 
-.tabs ul li a:link.selected, .tabs ul li a:visited.selected {
+.tabs ul li.selected {
   background-color: #444;
   color: white; }
 

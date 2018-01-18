@@ -12,6 +12,7 @@
 	}
 }
 
+
 // for tab nav of main panel content area
 
 .tabs ul {
@@ -20,15 +21,12 @@
 	li {
 		display: inline;
 		margin: 4px $base-spacing $small-spacing 0;;
-
-		a:link  {
-			background-color: $light-gray;
-			padding: $small-spacing $base-spacing;
-		}
+		background-color: $light-gray;
+		padding: $small-spacing $base-spacing;
 	}
 }
 
-.tabs ul li a:link.selected, .tabs ul li a:visited.selected {
+.tabs ul li.selected {
 	background-color: $dark-gray;
 	color: white;			
 }
