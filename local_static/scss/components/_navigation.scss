@@ -21,15 +21,16 @@
 		display: inline;
 		margin: 4px $base-spacing $small-spacing 0;;
 
-		a:link {
+		a:link  {
 			background-color: $light-gray;
 			padding: $small-spacing $base-spacing;
-
-			&.selected {
-				background-color: $dark-gray;				
-			}
 		}
 	}
+}
+
+.tabs ul li a:link.selected, .tabs ul li a:visited.selected {
+	background-color: $dark-gray;
+	color: white;			
 }
 
 .learn-more {
@@ -40,6 +41,7 @@
 
 		li {
 			display: inline-block;
+			line-height: $heading-line-height;
 			margin-right: $small-spacing;
 			vertical-align: top;
 			width: 20%;

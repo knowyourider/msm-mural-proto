@@ -5,12 +5,25 @@ div.img-left {
 	float: left;
 	max-width: 50%;
 	padding: $small-spacing $base-spacing $small-spacing 0;
+}
 
-	p {
-		color: $medium-gray;
-		font-size: $small-font-size;
+div.img-table {
+	display: table;
+  border-spacing: $large-spacing;
+  margin: -$large-spacing;
+
+	ul.img-row {
+  	margin: 0;
+    padding: 0;
+    list-style: none;
+ 		display: table-row;
+
+		li {
+			display: table-cell;
+		}
 	}
 }
+
 
 // for panel hotspots
 .show-highlight, .hide-highlight {

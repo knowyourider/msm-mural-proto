@@ -2,4 +2,10 @@
 
 .home {
 	padding: $large-spacing $base-spacing;
+	text-align: center;
+
+	p {
+		width: 70%;
+		margin: $large-spacing auto;
+	}
 }

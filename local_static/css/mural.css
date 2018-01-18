@@ -118,6 +118,10 @@ img {
 blockquote {
   font-style: italic; }
 
+.caption, .prompt {
+  color: #999;
+  font-size: 0.8em; }
+
 .hidden {
   display: none; }
 
@@ -161,16 +165,25 @@ blockquote {
   z-index: 100; }
 
 .learn-more {
-  max-width: 75%;
-  max-height: 75%; }
+  max-width: 65%;
+  max-height: 65%; }
 
 div.img-left {
   float: left;
   max-width: 50%;
   padding: 0.8em 1.6em 0.8em 0; }
-  div.img-left p {
-    color: #999;
-    font-size: 0.8em; }
+
+div.img-table {
+  display: table;
+  border-spacing: 3.2em;
+  margin: -3.2em; }
+  div.img-table ul.img-row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table-row; }
+    div.img-table ul.img-row li {
+      display: table-cell; }
 
 .show-highlight, .hide-highlight {
   cursor: pointer; }
@@ -196,8 +209,10 @@ div.img-left {
     .tabs ul li a:link {
       background-color: #ddd;
       padding: 0.8em 1.6em; }
-      .tabs ul li a:link.selected {
-        background-color: #444; }
+
+.tabs ul li a:link.selected, .tabs ul li a:visited.selected {
+  background-color: #444;
+  color: white; }
 
 .learn-more {
   clear: left; }
@@ -205,6 +220,7 @@ div.img-left {
     width: 100%; }
     .learn-more ul li {
       display: inline-block;
+      line-height: 1.2;
       margin-right: 0.8em;
       vertical-align: top;
       width: 20%; }
@@ -213,7 +229,11 @@ div.img-left {
         max-width: 85%; }
 
 .home {
-  padding: 3.2em 1.6em; }
+  padding: 3.2em 1.6em;
+  text-align: center; }
+  .home p {
+    width: 70%;
+    margin: 3.2em auto; }
 
 .wrapper {
   display: grid;
