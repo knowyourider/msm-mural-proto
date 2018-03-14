@@ -6,7 +6,7 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "futura", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -72,14 +72,14 @@ th {
   vertical-align: middle; }
 
 html {
-  background-color: white; }
+  background-color: black; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
 
 body {
-  color: #444;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #ddd;
+  font-family: "futura", sans-serif;
   font-size: 1em;
   line-height: 1.6;
   margin: 1.6em; }
@@ -90,7 +90,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "futura", sans-serif;
   line-height: 1.2;
   margin: 0 0 0.8em 0; }
 
@@ -129,7 +129,7 @@ blockquote {
   display: block; }
 
 #slimpop-wrapper {
-  background-color: white;
+  background-color: black;
   border: 1px solid #ddd;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.65);
   overflow: auto;
@@ -266,7 +266,9 @@ div.img-table {
 
 .main {
   grid-column: 2 / 5;
-  grid-row: 2; }
+  grid-row: 2;
+  background-color: white;
+  padding: 1.6em; }
 
 .home-nav {
   grid-column: 1;

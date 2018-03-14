@@ -5,7 +5,7 @@ $medium-screen: em(640) !default;
 $large-screen: em(880) !default;
 
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: $futura;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -33,14 +33,14 @@ $medium-gray: #999;
 $light-gray: #ddd;
 
 // Font Colors
-$base-font-color: $dark-gray !default;
+$base-font-color: $light-gray !default;
 $light-font-color: $medium-gray;
 $accent-color: red;
 $action-color: blue;
 $hover-color: green;
 
 // Background Colors
-$base-background-color: white;
+$base-background-color: black;
 
 // Borders
 $base-border-color: $light-gray;
