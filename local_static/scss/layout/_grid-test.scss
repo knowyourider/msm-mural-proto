@@ -1,0 +1,45 @@
+//test
+.test-wrapper {
+	margin: 0.8em 0.8em 0 0.8em;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	grid-template-areas:
+		"a b b c"
+		"d e e e";
+	background-color: yellow;
+	color: #444;
+	height: 100vh;
+}
+
+// .test-panel-top {
+// 	background-color: green;
+// 	grid-column: 1 / 5;
+// 	grid-row: 1;	
+// }
+
+.cell1 {
+	grid-area: a;
+}
+
+.cell2 {
+	grid-area: b;
+	padding-left: $base-spacing;
+}
+
+.cell3 {
+	grid-area: c;
+}
+
+.test-panel-image {
+	grid-area: d;
+}
+
+.test-main {
+	grid-area: e;
+	background-color: red;
+	padding: $base-spacing;
+	overflow: scroll;
+}

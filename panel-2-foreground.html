@@ -4,6 +4,8 @@
 	<title>Panel 2 - Child Labor</title>
 	<link rel="stylesheet" href="local_static/css/mural.css" type="text/css"/>
 
+  <link rel="stylesheet" href="https://use.typekit.net/kke2mht.css">
+  
   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
   <script type="text/javascript">
     if (typeof jQuery == 'undefined') {
@@ -18,12 +20,20 @@
 <body>
 
 <div class="wrapper">
-  <div class="back">
-  	<a href="index.html">return to Labor Mural Menu</a>
+
+  <div class="home-nav">
+    <a href="index.html">return to Labor Mural Menu</a>
   </div>
 
-  <div class="panel">
-    <p class="prompt">Tap the picture below to explore.</p>
+  <div class="panel-title">    
+    <h1>Child Labor</h1>
+  </div>
+
+  <div class="panel-nav"> 
+    <p><a href="panel-1.html">&larr; previous panel</a> | <a href="panel-3.html">next &rarr;</a></p>
+  </div>
+
+  <div class="panel-image">
 
     <svg  xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
@@ -49,74 +59,42 @@
 
     </svg>
 
-  </div>
+  </div><!--/panel-image-->
 
-  <nav class="top-panel-nav-prev">
-    <p class="previous"><a href="panel-1.html">&larr; previous panel</a></p>
-  </nav>
-
-  <div class="top-panel-nav-title">
-   	<h1>Child Labor</h1>
-   </div>
-
-  <nav class="top-panel-nav-next"> 
- 		<p class="next"><a href="panel-3.html">next&rarr;</a></p>
-  </nav>
-
-  <section class="main">
+  <div class="main">
 
   	<nav class="tabs">
   		<ul>
-  			<li><a href="panel-2.html">Overview</a></li>
-  			<li class="selected">Young Sardine Workers</li>
+  			<li><a href="panel-2.html">Introduction</a></li>
+  			<li class="selected">Children in Maine&rsquo;s Sardine industry</li>
   			<li><a href="panel-2-background.html">Background</a></li>
 			</ul>
 		</nav>
 
 		<article>
-			<h2>Young Sardine Workers</h2>
-			<div class="img-table">
+			<h2>Children in Maine&rsquo;s Sardine industry</h2>
+      <div class="img-left">
+        <img src="images/panel-2-images/child-labor-1.jpg">
+        <p class="caption"><em>Young cutters.</em> Photograph by Lewis Hine, Eastport, Maine, August 1911. Courtesy of the Library of Congress.</p>
+      </div>
 
-        <ul class="img-row">
-          <li>
-            <img src="images/panel-2-images/canners-1.jpg">
-            <p class="caption">This is the caption and credit text for the image above.</p>
-          </li>
-          <li>
-            <img src="images/panel-2-images/canners-2.jpg">
-            <p class="caption">This is the caption and credit text for the image above.</p>
-          </li>
-          <li>
-            <img src="images/panel-2-images/canners-3.jpg">
-            <p class="caption">This is the caption and credit text for the image above.</p>
-          </li>
-        </ul>
-
-			</div>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Beginning in 1875, entire families worked together in the canneries for &ldquo;the season,&rdquo; lasting from April to December. Most families came from local villages. Others gathered from a distance to live in company-owned camps. August launched the busy season. Boats loaded with herring arrived early each morning. Work in the busy season extended from dawn to well into the night.  Maine&rsquo;s 1907 Department of Labor reported the children could come and go from the work place as they wished, but many children worked long hours. While workers received decent wages, their income depended on &ldquo;the catch.&rdquo; The more fish, the more work. Companies paid workers by the piece, whether that meant filling a box of gutted fish or a can of processed sardines.</p>
 
       <nav class="learn-more">
         <h3>Learn More</h3>
         <ul>
-          <li><img src="images/panel-2-images/learn-more-4.jpg">Images: Lewis Hines photographs</li>
-          <li><img src="images/panel-2-images/learn-more-5.jpg">Voices: Working in the cannery</li>
-          <li><a class="pop_item" href="pops/panel-2-bucket.html"><img src="images/panel-2-images/bucket.jpg">Object: Sardine Bucket</a></li>
-          <li><img src="images/panel-2-images/learn-more-6.jpg">Visit: Sardine Canning Retort</li>
+          <li><img src="images/panel-2-images/learn-more-4.jpg">Images: Lewis Hines Photos of the Canneries</li>
+          <li><img src="images/panel-2-images/learn-more-5.jpg">Voices: Reformers Debate</li>
+          <li><a class="pop_item" href="pops/panel-2-bucket.html"><img src="images/panel-2-images/bucket.jpg">Objects: Sardine Cannery Tools</a></li>
+          <li><img src="images/panel-2-images/learn-more-6.jpg">Visit: Sardine Canning Display</li>
         </ul>
       </nav>
-      
+
     </article>
-	</section>
+      
+  </div><!--/main-->
 
-  <nav class="btm-panel-nav">
-    <p class="previous"><a href="panel-1.html">&larr; previous panel</a></p>
-    <p class="next"><a href="panel-3.html">next&rarr;</a></p>
-	</nav>
-
-</div>
+</div><!--/wrapper-->
 
 </body>
 </html>

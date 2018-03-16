@@ -1,22 +1,27 @@
 // navigation
 
-// for prev/next panel nav
-
-.top-panel-nav, .btm-panel-nav {
-	p.previous {
-		float: left;
-	}
-
-	p.next {
-		float: right;
-	}
+.home-nav {
+	grid-area: a;
 }
 
+.panel-title {
+	color: $accent-color;
+	grid-area: b;
+	padding-left: $base-spacing;
+}
+
+.panel-nav {
+	grid-area: c;
+	text-align: right;
+}
 
 // for tab nav of main panel content area
 
 .tabs ul {
+	font-size: $small-font-size;
+	letter-spacing: 0.025em;
 	margin-bottom: $base-spacing;
+	text-transform: uppercase;
 
 	li {
 		display: inline;
@@ -33,21 +38,22 @@
 
 .learn-more {
 	clear: left;
+	background-color: $light-gray;
+	margin-left:  -$base-spacing;
+	margin-right:  -$base-spacing;
+	margin-bottom: -$base-spacing;
+	padding: $small-spacing $base-spacing;
 
-	ul {
-		width: 100%;
+	ul li {
+		display: inline-block;
+		font-size: $small-font-size;
+		line-height: $heading-line-height;
+		margin-right: $base-spacing;
+		vertical-align: top;
+		width: 20%;
 
-		li {
-			display: inline-block;
-			line-height: $heading-line-height;
-			margin-right: $small-spacing;
-			vertical-align: top;
-			width: 20%;
-
-			img {
-				display: block;
-				max-width: 85%;
-			}
+		img {
+			border: $darker-border;
 		}
 	}
 }

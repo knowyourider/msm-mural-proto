@@ -11,7 +11,6 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  margin: $base-spacing;
 }
 
 h1,
@@ -25,7 +24,9 @@ h6 {
   margin: 0 0 $small-spacing 0;
 }
 
+
 p {
+  font-weight: normal;
   margin: 0 0 $small-spacing;
 }
 
