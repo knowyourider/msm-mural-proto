@@ -190,12 +190,16 @@ div.img-table {
     div.img-table ul.img-row li {
       display: table-cell; }
 
-.show-highlight, .hide-highlight {
+.show-highlight-background, .show-highlight-foreground, .hide-highlight {
   cursor: pointer; }
 
-.show-highlight {
-  fill: black;
-  fill-opacity: 0.8; }
+.show-highlight-background {
+  fill: #f7c98b;
+  opacity: 0.7; }
+
+.show-highlight-foreground {
+  fill: #a0efed;
+  opacity: 0.68; }
 
 .hide-highlight {
   fill: black;
@@ -204,6 +208,11 @@ div.img-table {
 .mural-panel-target {
   fill: red;
   fill-opacity: 0.075;
+  cursor: pointer; }
+
+.hotspot {
+  fill: #fc6c00;
+  fill-opacity: 0.75;
   cursor: pointer; }
 
 .home-nav {
