@@ -129,7 +129,7 @@ blockquote {
   display: block; }
 
 #slimpop-wrapper {
-  background-color: black;
+  background-color: white;
   border: 1px solid #ddd;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.65);
   overflow: auto;
@@ -227,6 +227,11 @@ div.img-table {
   grid-area: c;
   text-align: right; }
 
+.home-nav, .panel-nav {
+  font-size: 0.75em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
+
 .tabs ul {
   font-size: 0.75em;
   letter-spacing: 0.025em;
@@ -275,7 +280,7 @@ div.img-table {
   grid-gap: 20px;
   grid-template-areas: "a b b c" "d e e e";
   color: #444;
-  height: 97vh; }
+  height: 100vh; }
 
 .panel-image {
   grid-area: d; }
@@ -289,36 +294,5 @@ div.img-table {
     color: #444; }
     .main a:hover {
       color: #ff5e00; }
-
-.test-wrapper {
-  margin: 0.8em 0.8em 0 0.8em;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-template-areas: "a b b c" "d e e e";
-  background-color: yellow;
-  color: #444;
-  height: 100vh; }
-
-.cell1 {
-  grid-area: a; }
-
-.cell2 {
-  grid-area: b;
-  padding-left: 1.6em; }
-
-.cell3 {
-  grid-area: c; }
-
-.test-panel-image {
-  grid-area: d; }
-
-.test-main {
-  grid-area: e;
-  background-color: red;
-  padding: 1.6em;
-  overflow: scroll; }
 
 /*# sourceMappingURL=mural.css.map */

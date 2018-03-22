@@ -15,6 +15,11 @@
 	text-align: right;
 }
 
+.home-nav, .panel-nav {
+	font-size: $small-font-size;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;	
+}
 // for tab nav of main panel content area
 
 .tabs ul {
