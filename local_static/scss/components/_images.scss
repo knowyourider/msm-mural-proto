@@ -60,13 +60,19 @@ div.img-table {
 
 // for home page panels
 .mural-panel-target {
-	fill: red;
+	fill: $hover-color;
 	fill-opacity: 0.075;
 	cursor: pointer;
 }
 
 .hotspot {
-  fill: #fc6c00;
-	fill-opacity: 0.75;
+	stroke: white;
+  stroke-width: 3;
+	fill: white;
+	fill-opacity: 0.2;
 	cursor: pointer;
+
+	&:hover {
+		fill: $hover-color;
+	}
 }
