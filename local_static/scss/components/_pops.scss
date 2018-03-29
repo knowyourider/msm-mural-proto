@@ -12,7 +12,7 @@
 #slimpop-wrapper {
   background-color: $pop-background-color;
   border: $base-border;
-  box-shadow: $drop-shadow;
+  color: $dark-gray;
   overflow: auto;
   padding: $base-spacing;
   margin: auto;
@@ -37,6 +37,7 @@
 /* JavaScript assigns this (or .hidden) to slimpop-container */
 .slimpop-basic {
   bottom: 0;
+  box-shadow: $drop-shadow;
   display: block;
   left: 0;
   margin: auto;
@@ -46,4 +47,6 @@
   right: 0;
   top: 0;
   z-index: 100;
+  max-width: 75%;
+  max-height: 75%;
 }

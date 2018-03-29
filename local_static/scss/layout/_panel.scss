@@ -1,8 +1,8 @@
 // panel layout
 
 .wrapper {
-	margin: 0.8em;
-	padding: 0;
+	//margin: 0.8em;
+	//padding: $small-spacing;
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,7 +11,7 @@
 		"a b b c"
 		"d e e e";
 	color: $dark-gray;
-	height: 100vh;
+	height: 95vh;
 }
 
 .panel-image {
@@ -21,8 +21,9 @@
 .main {
 	grid-area: e;
 	background-color: white;
-	padding: $base-spacing;
+	margin-bottom: $small-spacing;
 	overflow: scroll;
+	padding: $base-spacing;
 
 	a {
 		color: $dark-gray;

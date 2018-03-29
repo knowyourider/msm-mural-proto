@@ -1,13 +1,16 @@
 // image treatments
 
 // for images in the main content area
-div.img-left {
+div.img-left, div.img-pop {
 	border: $base-border;
 	margin-bottom: $small-spacing;
 	overflow: auto;
 	padding: $small-spacing;
+}
+
+div.img-left {
 	position: relative;
-	
+
 	img {
 		float: left;
 		max-width: 50%;
@@ -20,6 +23,13 @@ div.img-left {
 	}
 }
 
+div.img-pop {
+	float: left;
+	margin-right: $small-spacing;
+	max-width: 50%;
+}
+
+// is the following obsolete?
 div.img-table {
 	display: table;
   	border-spacing: $large-spacing;
@@ -58,18 +68,13 @@ div.img-table {
   fill-opacity: 0;	
 }
 
-// for home page panels
-.mural-panel-target {
-	fill: $hover-color;
-	fill-opacity: 0.075;
-	cursor: pointer;
-}
+// for hotspots on home page and panel pages
 
-.hotspot {
+.hotspot, .mural-panel-hotspot {
 	stroke: white;
   stroke-width: 3;
-	fill: white;
-	fill-opacity: 0.2;
+	fill: $accent-color;
+	fill-opacity: 0.25;
 	cursor: pointer;
 
 	&:hover {

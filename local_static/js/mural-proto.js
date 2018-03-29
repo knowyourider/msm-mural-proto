@@ -25,7 +25,7 @@ $(document).ready(function(){
     // console.log(" -- href_split length: " + href_split.length);
     // slimPop(ajaxHref, slimpopSizeClass);  
 
-    slimPop(chosen_href, "learn-more");  
+    slimPop(chosen_href, "learn-more");
 
   });
 
@@ -59,7 +59,8 @@ function slimPop(theURL, sizeClass) {
   // assign contentDiv for further use
   var contentDiv = $('#slimpop-container');
   // contentDiv will be unhidden by specific classes 
-  contentDiv.removeClass().addClass("slimpop-basic").addClass(sizeClass); 
+  contentDiv.removeClass().addClass("slimpop-basic"); 
+  //contentDiv.removeClass().addClass("slimpop-basic").addClass(sizeClass); 
   // call Ajax
   getURL(theURL, contentDiv);
 }

@@ -20,6 +20,16 @@
 	letter-spacing: 0.025em;
 	text-transform: uppercase;	
 }
+
+#tiny-panels {
+	cursor: pointer;
+	//display: block;
+	fill: $accent-color;
+	fill-opacity: 0.25;
+	stroke: white;
+  stroke-width: 2;
+}
+
 // for tab nav of main panel content area
 
 .tabs ul {
@@ -51,7 +61,7 @@
 
 	ul li {
 		display: inline-block;
-		font-size: $small-font-size;
+		font-size: $smallish-font-size;
 		line-height: $heading-line-height;
 		margin-right: $base-spacing;
 		vertical-align: top;
@@ -59,6 +69,11 @@
 
 		img {
 			border: $darker-border;
+		}
+
+		span {
+			display: block;
+			color: $medium-gray
 		}
 	}
 }
