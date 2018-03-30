@@ -18,7 +18,7 @@
   margin: auto;
 }
 
-/* for the close link */
+// for the close link
 .slimpop-close {
   float: right;
 }
@@ -34,19 +34,35 @@
   z-index: 99;
 }
 
-/* JavaScript assigns this (or .hidden) to slimpop-container */
+// JavaScript assigns this (or .hidden) to slimpop-container
 .slimpop-basic {
-  bottom: 0;
+  //bottom: 0;
   box-shadow: $drop-shadow;
-  display: block;
-  left: 0;
-  margin: auto;
-  overflow-x: hidden;
+  //display: block;
+  //left: 0;
+  //margin: auto;
+  //overflow-x: hidden;
   overflow-y: auto;
   position: fixed; /* this positions the slimpop relative to viewport, it won't scroll with the page */
-  right: 0;
-  top: 0;
+  right: 12%;
+  top: 10%;
   z-index: 100;
   max-width: 75%;
   max-height: 75%;
+}
+
+// for Voices popups
+blockquote {
+  background-color: $light-gray;
+  max-height: 250px;
+  overflow: auto;
+  padding: 0 $base-spacing;
+}
+
+cite {
+  font-style: normal;
+
+  &:before {
+    content: "– "
+  }
 }

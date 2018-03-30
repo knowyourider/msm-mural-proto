@@ -1,7 +1,7 @@
 // image treatments
 
 // for images in the main content area
-div.img-left, div.img-pop {
+div.img-left, div.img-pop, div#slideshow-image {
 	border: $base-border;
 	margin-bottom: $small-spacing;
 	overflow: auto;
@@ -47,6 +47,9 @@ div.img-table {
 	}
 }
 
+#slideshow-image {
+	max-height: 50vh;
+}
 
 // for panel hotspots
 .show-highlight-background, .show-highlight-foreground, .hide-highlight {

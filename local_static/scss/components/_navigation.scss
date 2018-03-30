@@ -15,7 +15,7 @@
 	text-align: right;
 }
 
-.home-nav, .panel-nav {
+.home-nav, .panel-nav, .slide-nav {
 	font-size: $small-font-size;
 	letter-spacing: 0.025em;
 	text-transform: uppercase;	
@@ -23,7 +23,6 @@
 
 #tiny-panels {
 	cursor: pointer;
-	//display: block;
 	fill: $accent-color;
 	fill-opacity: 0.25;
 	stroke: white;
@@ -74,6 +73,22 @@
 		span {
 			display: block;
 			color: $medium-gray
+		}
+	}
+}
+
+// for Learn More slide shows
+
+.slide-nav {
+	text-align: right;
+
+	ul li {
+		span.no-more {
+			color: $light-gray;
+		}
+
+		a:link, a:visited {
+			color: $dark-gray;
 		}
 	}
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 button {
   appearance: none;
   background-color: #ddd;
@@ -123,6 +124,10 @@ blockquote {
   color: #999;
   font-size: 0.75em; }
 
+#slimpop-wrapper h4.subhead {
+  color: #999;
+  margin-bottom: 0; }
+
 .hidden {
   display: none; }
 
@@ -137,7 +142,6 @@ blockquote {
   padding: 1.6em;
   margin: auto; }
 
-/* for the close link */
 .slimpop-close {
   float: right; }
 
@@ -151,24 +155,29 @@ blockquote {
   width: 100%;
   z-index: 99; }
 
-/* JavaScript assigns this (or .hidden) to slimpop-container */
 .slimpop-basic {
-  bottom: 0;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.65);
-  display: block;
-  left: 0;
-  margin: auto;
-  overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
   /* this positions the slimpop relative to viewport, it won't scroll with the page */
-  right: 0;
-  top: 0;
+  right: 12%;
+  top: 10%;
   z-index: 100;
   max-width: 75%;
   max-height: 75%; }
 
-div.img-left, div.img-pop {
+blockquote {
+  background-color: #ddd;
+  max-height: 250px;
+  overflow: auto;
+  padding: 0 1.6em; }
+
+cite {
+  font-style: normal; }
+  cite:before {
+    content: "– "; }
+
+div.img-left, div.img-pop, div#slideshow-image {
   border: 1px solid #ddd;
   margin-bottom: 0.8em;
   overflow: auto;
@@ -200,6 +209,9 @@ div.img-table {
     display: table-row; }
     div.img-table ul.img-row li {
       display: table-cell; }
+
+#slideshow-image {
+  max-height: 50vh; }
 
 .show-highlight-background, .show-highlight-foreground, .hide-highlight {
   cursor: pointer; }
@@ -237,7 +249,7 @@ div.img-table {
   grid-area: c;
   text-align: right; }
 
-.home-nav, .panel-nav {
+.home-nav, .panel-nav, .slide-nav {
   font-size: 0.75em;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
@@ -283,6 +295,13 @@ div.img-table {
     .learn-more ul li span {
       display: block;
       color: #999; }
+
+.slide-nav {
+  text-align: right; }
+  .slide-nav ul li span.no-more {
+    color: #ddd; }
+  .slide-nav ul li a:link, .slide-nav ul li a:visited {
+    color: #444; }
 
 .home {
   padding: 3.2em 1.6em;
