@@ -36,19 +36,14 @@
 
 // JavaScript assigns this (or .hidden) to slimpop-container
 .slimpop-basic {
-  //bottom: 0;
   box-shadow: $drop-shadow;
-  //display: block;
-  //left: 0;
-  //margin: auto;
-  //overflow-x: hidden;
   overflow-y: auto;
   position: fixed; /* this positions the slimpop relative to viewport, it won't scroll with the page */
-  right: 12%;
-  top: 10%;
+  right: 8%;
+  top: 8%;
   z-index: 100;
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 85%;
+  max-height: 85%;
 }
 
 // for Voices popups
@@ -65,4 +60,8 @@ cite {
   &:before {
     content: "– "
   }
+}
+
+audio.voices {
+  width: 50%;
 }

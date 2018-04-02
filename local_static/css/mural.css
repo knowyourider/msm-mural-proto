@@ -93,7 +93,7 @@ h6 {
   font-family: "futura-pt", sans-serif;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 0 0.8em 0; }
+  margin: 0 0 0.4em 0; }
 
 p {
   font-weight: 400;
@@ -160,11 +160,11 @@ blockquote {
   overflow-y: auto;
   position: fixed;
   /* this positions the slimpop relative to viewport, it won't scroll with the page */
-  right: 12%;
-  top: 10%;
+  right: 8%;
+  top: 8%;
   z-index: 100;
-  max-width: 75%;
-  max-height: 75%; }
+  max-width: 85%;
+  max-height: 85%; }
 
 blockquote {
   background-color: #ddd;
@@ -177,11 +177,14 @@ cite {
   cite:before {
     content: "– "; }
 
+audio.voices {
+  width: 50%; }
+
 div.img-left, div.img-pop, div#slideshow-image {
   border: 1px solid #ddd;
   margin-bottom: 0.8em;
   overflow: auto;
-  padding: 0.8em; }
+  padding: 0.4em; }
 
 div.img-left {
   position: relative; }
@@ -211,7 +214,7 @@ div.img-table {
       display: table-cell; }
 
 #slideshow-image {
-  max-height: 50vh; }
+  max-width: 50vw; }
 
 .show-highlight-background, .show-highlight-foreground, .hide-highlight {
   cursor: pointer; }
