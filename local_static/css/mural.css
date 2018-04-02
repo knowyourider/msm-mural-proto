@@ -240,6 +240,10 @@ div.img-table {
   .hotspot:hover, .mural-panel-hotspot:hover {
     fill: #ff5e00; }
 
+#tiny-panels a path.selected {
+  fill: #ff5e00;
+  fill-opacity: 1; }
+
 .home-nav {
   grid-area: a; }
 
@@ -247,6 +251,8 @@ div.img-table {
   color: #ff5e00;
   grid-area: b;
   padding-left: 1.6em; }
+  .panel-title h1 {
+    margin-bottom: 0; }
 
 .panel-nav {
   grid-area: c;
@@ -256,13 +262,6 @@ div.img-table {
   font-size: 0.75em;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
-
-#tiny-panels {
-  cursor: pointer;
-  fill: #ff5e00;
-  fill-opacity: 0.25;
-  stroke: white;
-  stroke-width: 2; }
 
 .tabs ul {
   font-size: 0.75em;
@@ -317,7 +316,7 @@ div.img-table {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-template-areas: "a b b c" "d e e e";
   color: #444;
   height: 95vh; }

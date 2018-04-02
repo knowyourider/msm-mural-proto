@@ -8,6 +8,10 @@
 	color: $accent-color;
 	grid-area: b;
 	padding-left: $base-spacing;
+
+	h1 {
+		margin-bottom: 0;
+	}
 }
 
 .panel-nav {
@@ -19,14 +23,6 @@
 	font-size: $small-font-size;
 	letter-spacing: 0.025em;
 	text-transform: uppercase;	
-}
-
-#tiny-panels {
-	cursor: pointer;
-	fill: $accent-color;
-	fill-opacity: 0.25;
-	stroke: white;
-  stroke-width: 2;
 }
 
 // for tab nav of main panel content area

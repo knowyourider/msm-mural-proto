@@ -84,3 +84,9 @@ div.img-table {
 		fill: $hover-color;
 	}
 }
+
+
+#tiny-panels a path.selected {
+	fill: $accent-color;
+	fill-opacity: 1;
+}
