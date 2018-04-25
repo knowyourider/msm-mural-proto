@@ -1,29 +1,3 @@
-// navigation
-
-.home-nav {
-	grid-area: a;
-}
-
-.panel-title {
-	color: $accent-color;
-	grid-area: b;
-	padding-left: $base-spacing;
-
-	h1 {
-		margin-bottom: 0;
-	}
-}
-
-.panel-nav {
-	grid-area: c;
-	text-align: right;
-}
-
-.home-nav, .panel-nav, .slide-nav {
-	font-size: $small-font-size;
-	letter-spacing: 0.025em;
-	text-transform: uppercase;	
-}
 
 // for tab nav of main panel content area
 

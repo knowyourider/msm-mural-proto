@@ -1,28 +1,15 @@
 // panel layout
 
 .wrapper {
-	//margin: 0.8em;
-	//padding: $small-spacing;
-	list-style: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 15px;
-	grid-template-areas:
-		"a b b c"
-		"d e e e";
+	grid-template-columns: 1fr 4fr 1fr;
 	color: $dark-gray;
-	height: 95vh;
-}
-
-.panel-image {
-	grid-area: d;
 }
 
 .main {
-	grid-area: e;
+	grid-column: 2;
+	grid-row: 2;
 	background-color: white;
-	margin-bottom: $small-spacing;
-	overflow: scroll;
 	padding: $base-spacing;
 
 	a {
@@ -32,4 +19,50 @@
 			color: $accent-color;
 		}
 	}
+}
+
+.prev-panel {
+	background-color: $dark-gray;
+	grid-column: 1;
+	grid-row: 2;
+	margin-right: 1em;
+}
+
+.next-panel {
+	background-color: $dark-gray;
+	grid-column: 3;
+	grid-row: 2;
+	margin-left: 1em;
+}
+// navigation
+
+.home-nav {
+	background-color: black;
+	grid-column: 1;
+	grid-row: 1;
+	margin-right: 1em;
+}
+
+.panel-title {
+	background-color: white;
+	color: $accent-color;
+	grid-column: 2;
+	grid-row: 1;
+
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+.panel-nav {
+	background-color: black;
+	grid-column: 3;
+	grid-row: 1;
+	margin-left: 1em;
+}
+
+.home-nav, .panel-nav, .slide-nav {
+	font-size: $small-font-size;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;	
 }

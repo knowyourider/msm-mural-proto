@@ -244,25 +244,6 @@ div.img-table {
   fill: #ff5e00;
   fill-opacity: 1; }
 
-.home-nav {
-  grid-area: a; }
-
-.panel-title {
-  color: #ff5e00;
-  grid-area: b;
-  padding-left: 1.6em; }
-  .panel-title h1 {
-    margin-bottom: 0; }
-
-.panel-nav {
-  grid-area: c;
-  text-align: right; }
-
-.home-nav, .panel-nav, .slide-nav {
-  font-size: 0.75em;
-  letter-spacing: 0.025em;
-  text-transform: uppercase; }
-
 .tabs ul {
   font-size: 0.75em;
   letter-spacing: 0.025em;
@@ -313,26 +294,55 @@ div.img-table {
     margin: 3.2em auto; }
 
 .wrapper {
-  list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
-  grid-template-areas: "a b b c" "d e e e";
-  color: #444;
-  height: 95vh; }
-
-.panel-image {
-  grid-area: d; }
+  grid-template-columns: 1fr 4fr 1fr;
+  color: #444; }
 
 .main {
-  grid-area: e;
+  grid-column: 2;
+  grid-row: 2;
   background-color: white;
-  margin-bottom: 0.8em;
-  overflow: scroll;
   padding: 1.6em; }
   .main a {
     color: #444; }
     .main a:hover {
       color: #ff5e00; }
+
+.prev-panel {
+  background-color: #444;
+  grid-column: 1;
+  grid-row: 2;
+  margin-right: 1em; }
+
+.next-panel {
+  background-color: #444;
+  grid-column: 3;
+  grid-row: 2;
+  margin-left: 1em; }
+
+.home-nav {
+  background-color: black;
+  grid-column: 1;
+  grid-row: 1;
+  margin-right: 1em; }
+
+.panel-title {
+  background-color: white;
+  color: #ff5e00;
+  grid-column: 2;
+  grid-row: 1; }
+  .panel-title h1 {
+    margin-bottom: 0; }
+
+.panel-nav {
+  background-color: black;
+  grid-column: 3;
+  grid-row: 1;
+  margin-left: 1em; }
+
+.home-nav, .panel-nav, .slide-nav {
+  font-size: 0.75em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=mural.css.map */
