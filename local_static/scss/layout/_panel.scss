@@ -46,6 +46,28 @@
 	grid-column: 2;
 	grid-row: 1;
 	padding: 0 $base-spacing;
+	position: relative;
+
+	p.more-link {
+		position: absolute;
+		font-weight: bold;
+		top: 6.25em;
+		right: 4.5em;
+
+		a {
+			color: $accent-color;
+		}
+	}
+
+	p.close-link {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+
+		a {
+			color: $accent-color;
+		}
+	}
 }
 
 .panel-nav {
@@ -53,4 +75,9 @@
 	grid-column: 3;
 	grid-row: 1;
 	margin-left: 1em;
+}
+
+.text-scroll {
+	max-height: 400px;
+	overflow: scroll;
 }

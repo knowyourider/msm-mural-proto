@@ -207,8 +207,6 @@ div.image {
   div.image img {
     border: 1px solid #ddd;
     margin-top: 0.8em; }
-  div.image p {
-    margin: 0.4em; }
 
 div.img-pop {
   float: left;
@@ -338,12 +336,30 @@ nav.tabs {
   background-color: white;
   grid-column: 2;
   grid-row: 1;
-  padding: 0 1.6em; }
+  padding: 0 1.6em;
+  position: relative; }
+  .panel-title p.more-link {
+    position: absolute;
+    font-weight: bold;
+    top: 6.25em;
+    right: 4.5em; }
+    .panel-title p.more-link a {
+      color: #ffa64d; }
+  .panel-title p.close-link {
+    position: absolute;
+    top: 5px;
+    right: 10px; }
+    .panel-title p.close-link a {
+      color: #ffa64d; }
 
 .panel-nav {
   background-color: black;
   grid-column: 3;
   grid-row: 1;
   margin-left: 1em; }
+
+.text-scroll {
+  max-height: 400px;
+  overflow: scroll; }
 
 /*# sourceMappingURL=mural.css.map */

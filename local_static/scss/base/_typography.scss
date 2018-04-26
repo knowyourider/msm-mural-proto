@@ -82,8 +82,11 @@ blockquote {
   text-align: center;
 }
 
-.panel-title p {
-  color: $dark-gray;
-  font-size: $small-font-size;
-  text-align: left;
+.panel-title {
+
+  p {
+    color: $dark-gray;
+    font-size: $small-font-size;
+    text-align: left;
+  }
 }

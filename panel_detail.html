@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}{{ object.panel_title }}{% endblock %}
+
+{% block full_page %}
+
+<div class="wrapper">
+
+  <div class="home-nav">
+    <a href="/">return to Labor Mural Menu</a>
+  </div>
+
+  <div class="panel-title">     
+    <h1>{{ object.panel_title }}</h1>
+    {{ object.panel_blurb|safe }}
+  </div>
+
+  <div class="panel-nav"> 
+    <p><a href="panel-1.html">&larr; previous panel</a> debug: {{ article.get_article_type_display }} | <a href="panel-3.html">next &rarr;</a></p>
+  </div>
+
+  <div class="panel-image">
+
+    <svg  xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+      viewBox="0 0 874 2073">
+
+      <image id="document" x="0" y="0" xlink:href="{% static 'panels/panelpics/' %}{{ object.slug }}.jpg" width="874" height="2073" />
+
+      {% for hotspot in object.hotspot_set.all %}  
+        <a class="pop_item" href="{% url 'pops:hotspot_ajax_detail' hotspot.slug %}">
+          <circle class="hotspot" cx="{{ hotspot.x_position }}" 
+            cy="{{ hotspot.y_position }}" r="72"/>
+        </a>
+      {% endfor %}    
+    </svg>
+
+  </div><!--/panel-image-->
+
+  <div class="main">
+
+  	<nav class="tabs">
+  		<ul>
+        <li {% if article.article_type == 'intro' %} class="selected"{% endif %}>
+          {% if article.article_type != 'intro' %}<a href="{% url 'panels:panel_detail' object.slug 'intro' %}">{% endif %}Introduction
+          {% if article.article_type != 'intro' %}</a>{% endif %}
+        </li>
+        <li {% if article.article_type == 'fore' %} class="selected"{% endif %}>
+          {% if article.article_type != 'fore' %}<a href="{% url 'panels:panel_detail' object.slug 'fore' %}">{% endif %}
+            {{ object.foreground_title|safe }} 
+          {% if article.article_type != 'fore' %}</a>{% endif %}
+        </li>
+			</ul>
+		</nav>
+
+		<article>
+      <h2>{% if article.article_type != 2 %}
+        {{ article.get_article_type_display}}: {% endif %}
+        {{ article.title|safe }} 
+      </h2>
+			<div class="img-left">
+        <img src="{% static 'panels/articlepics/' %}p{{ object.ordinal }}-{{ article.article_type }}.jpg">
+				<p class="caption">{{ article.caption|safe }}</p>
+			</div>
+
+			{{ article.narrative|safe }}
+
+      {% if object.visit_set.all %}
+      Visit
+        {% for visit in object.visit_set.all %}  
+        <p>  
+          {{ visit.title|safe}}      
+        </p>
+        {% endfor %}    
+        </ul>
+      </nav>
+      {% endif %}
+
+      {% if article.learnmore_set.all %}
+      <nav class="learn-more">
+        <h3>Learn More</h3>
+        <ul>
+        {% for learnmore in article.learnmore_set.all %}          
+          <li>
+            <a class="pop_item" href="{% url 'pops:'|add:learnmore.learnmore_type|add:'_ajax_detail' learnmore.id %}">
+              <img src="{% static 'pops/learnmore/thumbpics/' %}p{{ learnmore.article.panel.ordinal }}-{{ learnmore.article.article_type }}-{{ learnmore.learnmore_type }}.jpg">
+              <span>{{learnmore.get_learnmore_type_display}}:</span>
+              {{learnmore.title|safe}}
+            </a> 
+        </li>
+        {% endfor %}    
+        </ul>
+      </nav>
+      {% endif %}
+
+		</article>
+
+	</div><!--/main-->
+
+</div><!--/wrapper-->
+
+{% endblock full_page %}
