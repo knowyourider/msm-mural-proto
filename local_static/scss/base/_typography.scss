@@ -65,7 +65,25 @@ blockquote {
   font-size: $small-font-size;
 }
 
+.home-nav, .panel-nav, .slide-nav {
+  font-size: $small-font-size;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;  
+}
+
 #slimpop-wrapper h4.subhead {
   color: $medium-gray;
   margin-bottom: 0;
+}
+
+.panel-title h1, .panel-title h3 {
+  color: $accent-color;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.panel-title p {
+  color: $dark-gray;
+  font-size: $small-font-size;
+  text-align: left;
 }
