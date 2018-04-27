@@ -1,4 +1,4 @@
-// for tab nav of main panel content area
+// for tab nav of main panel content area (lozenge buttons)
 nav.tabs {
 	position: absolute;
 	bottom: 0;
@@ -13,11 +13,21 @@ nav.tabs {
 		background-color: $accent-color;
 		border-radius: $round-border-radius;
 		display: inline-block;
-		margin: 4px $base-spacing $small-spacing 0;;
+		height: 70px;
+		line-height: $heading-line-height;
+		margin: 4px $base-spacing $small-spacing 0;
 		padding: $small-spacing $base-spacing;
 		text-align: center;
 		width: 42%;
-		height: 70px;
+		
+		a:link, a:visited {
+			color: white;
+		}
+
+		a:hover {
+			color: $dark-gray;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -25,6 +35,8 @@ nav.tabs {
 	background-color: $dark-gray;
 	color: white;			
 }
+
+// for Learn More picture-links
 
 .learn-more {
 	background-color: $light-gray;
@@ -64,5 +76,35 @@ nav.tabs {
 		a:link, a:visited {
 			color: $dark-gray;
 		}
+	}
+}
+
+// for next, previous panel links
+
+.next-panel, .prev-panel {
+	color: $light-gray;
+
+	a:link, a:visited {
+		color: $accent-color;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+// for visit link
+h3.visit-link {
+	color: $dark-gray;
+	font-size: $small-font-size;
+	font-weight: normal;
+	margin: $small-spacing 0;
+	text-align: center;
+
+	a {
+		color: $accent-color;
+		display: block;
+		font-weight: bold;
+		font-size: $base-font-size;
 	}
 }

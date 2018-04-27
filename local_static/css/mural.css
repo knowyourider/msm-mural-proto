@@ -125,7 +125,7 @@ img {
 blockquote {
   font-style: italic; }
 
-.caption, .prompt {
+.prompt, div.image p {
   color: #999;
   font-size: 0.75em; }
 
@@ -256,11 +256,17 @@ nav.tabs {
     background-color: #ffa64d;
     border-radius: 70px;
     display: inline-block;
+    height: 70px;
+    line-height: 1.2;
     margin: 4px 1.6em 0.8em 0;
     padding: 0.8em 1.6em;
     text-align: center;
-    width: 42%;
-    height: 70px; }
+    width: 42%; }
+    .tabs ul li a:link, .tabs ul li a:visited {
+      color: white; }
+    .tabs ul li a:hover {
+      color: #444;
+      text-decoration: underline; }
 
 .tabs ul li.selected {
   background-color: #444;
@@ -290,6 +296,25 @@ nav.tabs {
     color: #ddd; }
   .slide-nav ul li a:link, .slide-nav ul li a:visited {
     color: #444; }
+
+.next-panel, .prev-panel {
+  color: #ddd; }
+  .next-panel a:link, .next-panel a:visited, .prev-panel a:link, .prev-panel a:visited {
+    color: #ffa64d; }
+  .next-panel a:hover, .prev-panel a:hover {
+    text-decoration: underline; }
+
+h3.visit-link {
+  color: #444;
+  font-size: 0.75em;
+  font-weight: normal;
+  margin: 0.8em 0;
+  text-align: center; }
+  h3.visit-link a {
+    color: #ffa64d;
+    display: block;
+    font-weight: bold;
+    font-size: 1.25em; }
 
 .home {
   padding: 3.2em 1.6em;
