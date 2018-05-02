@@ -9,17 +9,12 @@ div.image {
 	img {
 		border: $base-border;
 		margin-top: $small-spacing;
+		max-height: 450px;
 	}
 
 	p {
 		//margin: $tiny-spacing null;
 	}
-}
-
-div.img-pop {
-	float: left;
-	margin-right: $small-spacing;
-	max-width: 50%;
 }
 
 #slideshow-image {

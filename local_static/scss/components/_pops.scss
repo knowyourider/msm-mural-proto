@@ -16,11 +16,24 @@
   overflow: auto;
   padding: $base-spacing;
   margin: auto;
+  
+  h1 {
+    color: $accent-color;
+  }
+  
+  h4.subhead {
+    color: $medium-gray;
+    margin-bottom: 0;
+  }
 }
 
 // for the close link
-.slimpop-close {
+.pop-close {
   float: right;
+
+  a:link, a:visited {
+    color: $accent-color;
+  }
 }
 
 #slimpop-overlay {
@@ -44,6 +57,25 @@
   z-index: 100;
   max-width: 85%;
   max-height: 85%;
+}
+
+.pop-img {
+  border-top: 6px solid $light-gray;
+  border-bottom: 6px solid $light-gray;
+  margin-bottom: $small-spacing;
+  text-align: center;
+
+  img {
+    border: $base-border;
+    margin-top: $small-spacing;
+    max-height: 600px;
+  }
+
+  p {
+    color: $medium-gray;
+    font-size: $small-font-size;
+    text-align: left;
+  }
 }
 
 // for Voices popups
