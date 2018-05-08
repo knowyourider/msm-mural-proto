@@ -12,26 +12,29 @@
 <div class="wrapper">
 
   <div class="home-nav">
-    <a href="index.html">&larr; Menu</a> | <a href="panel-2.html">&larr; previous</a> | <a href="">next &rarr;</a></p>
+    <a href="index.html">&larr; Home</a>
   </div>
 
   <div class="panel-title">    
     <h1>Women in the Mills</h1>
+    <p>This is the newly added blurb. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation.</p>
+    <p class="more-link"><a href="panel-1-intro.html">learn more...</a></p>
   </div>
 
   <div class="panel-nav"> 
-    <svg id="tiny-panels" data-name="tiny-panels" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 48" width="224" height="40" >
+    <svg id="tiny-panels" data-name="tiny-panels" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 48" width="164" height="28" >
       
       <a href="panel-1.html">
         <path d="M23.5.5v47H.5V.5h23M24,0H0V48H24V0Z" class="hotspot"/>
       </a>
 
       <a href="panel-2.html">
-        <path d="M47.5.5v47h-23V.5h23M48,0H24V48H48V0Z" class="hotspot"/>
+        <path d="M47.5.5v47h-23V.5h23M48,0H24V48H48V0Z" class="hotspot selected"/>
       </a>
       
       <a href="panel-3.html">
-        <path d="M71.5.5v47h-23V.5h23M72,0H48V48H72V0Z" class="hotspot selected"/>
+        <path d="M71.5.5v47h-23V.5h23M72,0H48V48H72V0Z" class="hotspot"/>
       </a>
 
       <a href="">
@@ -67,35 +70,35 @@
       </a>
 
     </svg>
+    
   </div>
 
-  <div class="panel-image">
-    <img src="images/panel-3-textile-workers.jpg">
+  <div class="prev-panel">
+    <a href="panel-2.html">previous</a>
   </div>
 
   <div class="main">
 
-  	<nav class="tabs">
-  		<ul>
-        <li class="selected">Introduction</li>
-  			<li>Textile Workers</li>
-  			<li>Background</li>
-			</ul>
-		</nav>
-
 		<article>
-			<div class="img-left">
-        <img src="images/panel-3-photo.jpg">
-        <p class="caption">This is the caption and credit text for the image above.</p>
-			</div>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="panel-image">
+      <img src="images/panel-3-textile-workers.jpg">
+    </div><!--/panel-image-->
 
 		</article>
 
+    <nav class="tabs">
+      <ul>
+        <li><a href="">Intro Article Title</a></li>
+        <li><a href="">Foreground Article Title</a></li>
+      </ul>
+    </nav>
+
   </div><!--/main-->
+
+  <div class="next-panel">
+    <a href="">next</a>
+  </div>
 
 </div><!--/wrapper-->
 </body>

@@ -1,7 +1,7 @@
 // for tab nav of main panel content area (lozenge buttons)
 nav.tabs {
 	position: absolute;
-	bottom: 8px;
+	bottom: 4px;
 }
 
 .tabs ul {
@@ -42,6 +42,7 @@ nav.tabs {
 	background-color: $light-gray;
 	margin-left:  -$base-spacing * 2;
 	margin-right:  -$base-spacing * 2;
+	height: 308px;
 	padding: $tiny-spacing $base-spacing * 2 $base-spacing * 3 $base-spacing * 2;
 
 	ul li {
@@ -61,7 +62,7 @@ nav.tabs {
 		}
 
 		span {
-			display: block;
+			//display: block;
 			color: $medium-gray
 		}
 	}
@@ -107,8 +108,8 @@ h3.visit-link {
 
 	a {
 		color: $accent-color;
-		display: block;
+		//display: block;
 		font-weight: bold;
-		font-size: $base-font-size;
+		//font-size: $base-font-size;
 	}
 }

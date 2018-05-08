@@ -5,11 +5,12 @@ div.image {
 	text-align: center;
 	border-top: 6px solid $light-gray;
 	border-bottom: 6px solid $light-gray;
+	height: 500px;
 	
 	img {
 		border: $base-border;
 		margin-top: $small-spacing;
-		max-height: 450px;
+		//max-height: 450px;
 	}
 
 	p {

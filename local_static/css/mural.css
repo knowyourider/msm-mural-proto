@@ -40,7 +40,7 @@ a:hover {
 .main a {
   color: #444; }
   .main a:hover {
-    color: #ffa64d; }
+    color: #ff9933; }
 
 ul,
 ol {
@@ -139,7 +139,7 @@ blockquote {
   margin-bottom: 0;
   text-align: center; }
   .panel-title h1 {
-    color: #ffa64d;
+    color: #ff9933;
     line-height: 1em; }
   .panel-title h3 {
     margin-bottom: 0;
@@ -162,7 +162,7 @@ blockquote {
   padding: 1.6em;
   margin: auto; }
   #slimpop-wrapper h1 {
-    color: #ffa64d; }
+    color: #ff9933; }
   #slimpop-wrapper h4.subhead {
     color: #999;
     margin-bottom: 0; }
@@ -170,7 +170,7 @@ blockquote {
 .pop-close {
   float: right; }
   .pop-close a:link, .pop-close a:visited {
-    color: #ffa64d; }
+    color: #ff9933; }
 
 #slimpop-overlay {
   background: url(../images/overlay.png) repeat;
@@ -224,11 +224,11 @@ audio.voices {
 div.image {
   text-align: center;
   border-top: 6px solid #eee;
-  border-bottom: 6px solid #eee; }
+  border-bottom: 6px solid #eee;
+  height: 500px; }
   div.image img {
     border: 1px solid #eee;
-    margin-top: 0.8em;
-    max-height: 450px; }
+    margin-top: 0.8em; }
 
 #slideshow-image {
   max-width: 50vw; }
@@ -251,26 +251,26 @@ div.image {
 .hotspot, .mural-panel-hotspot {
   stroke: white;
   stroke-width: 3;
-  fill: #ffa64d;
+  fill: #ff9933;
   fill-opacity: 0.25;
   cursor: pointer; }
   .hotspot:hover, .mural-panel-hotspot:hover {
     fill: #ff5e00; }
 
 #tiny-panels a path.selected {
-  fill: #ffa64d;
+  fill: #ff9933;
   fill-opacity: 1; }
 
 nav.tabs {
   position: absolute;
-  bottom: 8px; }
+  bottom: 4px; }
 
 .tabs ul {
   font-size: 0.75em;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
   .tabs ul li {
-    background-color: #ffa64d;
+    background-color: #ff9933;
     border-radius: 60px;
     display: inline-block;
     height: 60px;
@@ -293,6 +293,7 @@ nav.tabs {
   background-color: #eee;
   margin-left: -3.2em;
   margin-right: -3.2em;
+  height: 308px;
   padding: 0.4em 3.2em 4.8em 3.2em; }
   .learn-more ul li {
     display: inline-block;
@@ -306,7 +307,6 @@ nav.tabs {
     .learn-more ul li img {
       border: 1px solid #999; }
     .learn-more ul li span {
-      display: block;
       color: #999; }
 
 .slide-nav {
@@ -319,7 +319,7 @@ nav.tabs {
 .next-panel, .prev-panel {
   color: #eee; }
   .next-panel a:link, .next-panel a:visited, .prev-panel a:link, .prev-panel a:visited {
-    color: #ffa64d; }
+    color: #ff9933; }
   .next-panel a:hover, .prev-panel a:hover {
     text-decoration: underline; }
 
@@ -330,10 +330,8 @@ h3.visit-link {
   margin: 0.8em 0;
   text-align: center; }
   h3.visit-link a {
-    color: #ffa64d;
-    display: block;
-    font-weight: bold;
-    font-size: 1.25em; }
+    color: #ff9933;
+    font-weight: bold; }
 
 .home {
   padding: 3.2em 1.6em;
@@ -346,7 +344,7 @@ h3.visit-link {
   color: #444;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 120px auto; }
+  grid-template-rows: 130px 1220px; }
 
 .main {
   grid-column: 2;
@@ -388,13 +386,13 @@ h3.visit-link {
     top: 6.25em;
     right: 4.5em; }
     .panel-title p.more-link a {
-      color: #ffa64d; }
+      color: #ff9933; }
   .panel-title p.close-link {
     position: absolute;
     top: 5px;
     right: 10px; }
     .panel-title p.close-link a {
-      color: #ffa64d; }
+      color: #ff9933; }
 
 .panel-nav {
   background-color: black;
@@ -403,7 +401,7 @@ h3.visit-link {
   margin-left: 1em; }
 
 .text-scroll {
-  max-height: 370px;
+  height: 370px;
   overflow: scroll;
   background-color: #eee; }
 
