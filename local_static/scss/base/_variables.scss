@@ -37,7 +37,7 @@ $base-font-color: $light-gray !default;
 $light-font-color: $medium-gray;
 $accent-color: #ff9933;
 $action-color: $light-gray;
-$hover-color: #ff5e00;
+$hover-color: darken($accent-color, 25%);
 
 // Background Colors
 $base-background-color: black;

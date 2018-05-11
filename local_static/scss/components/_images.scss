@@ -5,16 +5,17 @@ div.image {
 	text-align: center;
 	border-top: 6px solid $light-gray;
 	border-bottom: 6px solid $light-gray;
-	height: 500px;
+	height: 460px;
+	margin-bottom: $small-spacing;
 	
 	img {
 		border: $base-border;
-		margin-top: $small-spacing;
-		//max-height: 450px;
+		margin: $tiny-spacing 0;
+		max-height: 430px;
 	}
 
 	p {
-		//margin: $tiny-spacing null;
+		margin-top: 0;
 	}
 }
 

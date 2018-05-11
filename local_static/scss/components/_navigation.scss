@@ -18,7 +18,8 @@ nav.tabs {
 		margin: 4px $base-spacing $small-spacing 0;
 		padding: $small-spacing $base-spacing;
 		text-align: center;
-		width: 42%;
+		vertical-align: top;
+		width: 240px;
 		
 		a:link, a:visited {
 			color: white;
@@ -62,7 +63,6 @@ nav.tabs {
 		}
 
 		span {
-			//display: block;
 			color: $medium-gray
 		}
 	}
@@ -81,6 +81,11 @@ nav.tabs {
 		a:link, a:visited {
 			color: $dark-gray;
 		}
+		
+		a:hover {
+			color: $hover-color;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -94,6 +99,7 @@ nav.tabs {
 	}
 
 	a:hover {
+		color: $hover-color;
 		text-decoration: underline;
 	}
 }
@@ -108,8 +114,6 @@ h3.visit-link {
 
 	a {
 		color: $accent-color;
-		//display: block;
 		font-weight: bold;
-		//font-size: $base-font-size;
 	}
 }

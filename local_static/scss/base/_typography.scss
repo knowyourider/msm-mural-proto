@@ -72,13 +72,14 @@ blockquote {
 }
 
 .panel-title {
-  color: $dark-gray;
+//  color: $dark-gray;
   margin-bottom: 0;
   text-align: center;
 
   h1 {
     color: $accent-color;
     line-height: 1em;
+    margin: 0;
   }
   
   h3 {
@@ -87,7 +88,12 @@ blockquote {
   }
 
   p {
-    font-size: $small-font-size;
+    font-size: $smallish-font-size;
+    line-height: $heading-line-height;
     text-align: left;
+
+    a {
+      color: $accent-color;
+    }
   }
 }
