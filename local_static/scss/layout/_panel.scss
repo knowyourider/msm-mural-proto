@@ -48,25 +48,15 @@
 	padding: 0 $base-spacing;
 	position: relative;
 
-	// p.more-link {
-	// 	position: absolute;
-	// 	font-weight: bold;
-	// 	top: 6.25em;
-	// 	right: 4.5em;
-
-	// 	a {
-	// 		color: $accent-color;
-	// 	}
-	// }
+	a {
+		font-weight: bold;
+		color: $accent-color;
+	}
 
 	p.close-link {
 		position: absolute;
 		top: 5px;
 		right: 10px;
-
-		a {
-			color: $accent-color;
-		}
 	}
 }
 

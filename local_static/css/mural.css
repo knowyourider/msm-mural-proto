@@ -255,16 +255,26 @@ div.image {
   fill: black;
   fill-opacity: 0; }
 
-.hotspot, .mural-panel-hotspot {
+.mural-panel-hotspot {
+  stroke: white;
+  stroke-width: 3;
+  cursor: pointer;
+  fill: none; }
+
+.hotspot {
   stroke: white;
   stroke-width: 3;
   fill: #ff9933;
   fill-opacity: 0.25;
   cursor: pointer; }
-  .hotspot:hover, .mural-panel-hotspot:hover {
+  .hotspot:hover {
     fill: #b35900; }
 
-#tiny-panels a path.selected {
+#tiny-panels .hotspot {
+  stroke-width: 1;
+  fill: black; }
+
+#tiny-panels rect.selected {
   fill: #ff9933;
   fill-opacity: 1; }
 
@@ -392,12 +402,13 @@ h3.visit-link {
   grid-row: 1;
   padding: 0 1.6em;
   position: relative; }
+  .panel-title a {
+    font-weight: bold;
+    color: #ff9933; }
   .panel-title p.close-link {
     position: absolute;
     top: 5px;
     right: 10px; }
-    .panel-title p.close-link a {
-      color: #ff9933; }
 
 .panel-nav {
   background-color: black;
