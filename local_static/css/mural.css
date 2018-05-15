@@ -228,14 +228,14 @@ div.image {
   text-align: center;
   border-top: 6px solid #eee;
   border-bottom: 6px solid #eee;
-  height: 460px;
+  height: 470px;
   margin-bottom: 0.8em; }
   div.image img {
     border: 1px solid #eee;
     margin: 0.4em 0;
-    max-height: 430px; }
+    max-height: 440px; }
   div.image p {
-    margin-top: 0; }
+    margin-top: -0.8em; }
 
 #slideshow-image {
   max-width: 50vw; }
@@ -281,7 +281,7 @@ div.image {
 
 nav.tabs {
   position: absolute;
-  bottom: 4px; }
+  bottom: 0px; }
 
 .tabs ul {
   font-size: 0.75em;
@@ -289,6 +289,7 @@ nav.tabs {
   text-transform: uppercase; }
   .tabs ul li {
     background-color: #ff9933;
+    border: 1px solid #e67300;
     border-radius: 60px;
     display: inline-block;
     height: 60px;
@@ -312,7 +313,7 @@ nav.tabs {
   background-color: #eee;
   margin-left: -3.2em;
   margin-right: -3.2em;
-  height: 308px;
+  height: 328px;
   padding: 0.4em 3.2em 4.8em 3.2em; }
   .learn-more ul li {
     display: inline-block;
@@ -339,12 +340,19 @@ nav.tabs {
     text-decoration: underline; }
 
 .next-panel, .prev-panel {
-  color: #eee; }
+  color: #eee;
+  position: relative; }
+  .next-panel a, .prev-panel a {
+    position: absolute;
+    top: 50%; }
   .next-panel a:link, .next-panel a:visited, .prev-panel a:link, .prev-panel a:visited {
     color: #ff9933; }
   .next-panel a:hover, .prev-panel a:hover {
     color: #b35900;
     text-decoration: underline; }
+
+.next-panel a {
+  right: 5px; }
 
 h3.visit-link {
   color: #444;

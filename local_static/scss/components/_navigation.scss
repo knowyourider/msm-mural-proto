@@ -1,7 +1,7 @@
 // for tab nav of main panel content area (lozenge buttons)
 nav.tabs {
 	position: absolute;
-	bottom: 4px;
+	bottom: 0px;
 }
 
 .tabs ul {
@@ -11,6 +11,7 @@ nav.tabs {
 
 	li {
 		background-color: $accent-color;
+		border: 1px solid darken($accent-color, 15%);
 		border-radius: $round-border-radius;
 		display: inline-block;
 		height: 60px;
@@ -43,7 +44,7 @@ nav.tabs {
 	background-color: $light-gray;
 	margin-left:  -$base-spacing * 2;
 	margin-right:  -$base-spacing * 2;
-	height: 308px;
+	height: 328px;
 	padding: $tiny-spacing $base-spacing * 2 $base-spacing * 3 $base-spacing * 2;
 
 	ul li {
@@ -93,6 +94,12 @@ nav.tabs {
 
 .next-panel, .prev-panel {
 	color: $light-gray;
+	position: relative;
+
+	a {
+		position: absolute;
+		top: 50%;
+	}
 
 	a:link, a:visited {
 		color: $accent-color;
@@ -102,6 +109,10 @@ nav.tabs {
 		color: $hover-color;
 		text-decoration: underline;
 	}
+}
+
+.next-panel	a {
+	right: 5px;
 }
 
 // for visit link
