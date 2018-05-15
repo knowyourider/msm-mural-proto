@@ -259,7 +259,8 @@ div.image {
   stroke: white;
   stroke-width: 3;
   cursor: pointer;
-  fill: none; }
+  fill: black;
+  fill-opacity: 0; }
 
 .hotspot {
   stroke: white;
