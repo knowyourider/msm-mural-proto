@@ -331,13 +331,15 @@ nav.tabs {
 
 .slide-nav {
   text-align: right; }
-  .slide-nav ul li span.no-more {
-    color: #eee; }
-  .slide-nav ul li a:link, .slide-nav ul li a:visited {
-    color: #444; }
-  .slide-nav ul li a:hover {
-    color: #b35900;
-    text-decoration: underline; }
+  .slide-nav ul li {
+    display: inline; }
+    .slide-nav ul li span.no-more {
+      color: #eee; }
+    .slide-nav ul li a:link, .slide-nav ul li a:visited {
+      color: #444; }
+    .slide-nav ul li a:hover {
+      color: #b35900;
+      text-decoration: underline; }
 
 .next-panel, .prev-panel {
   color: #eee;

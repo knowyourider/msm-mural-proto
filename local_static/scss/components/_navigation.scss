@@ -75,6 +75,8 @@ nav.tabs {
 	text-align: right;
 
 	ul li {
+		display: inline;
+		
 		span.no-more {
 			color: $light-gray;
 		}
