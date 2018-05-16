@@ -386,9 +386,6 @@ h3.visit-link {
   padding: 0 3.2em;
   position: relative; }
 
-.panel-image {
-  max-width: 95%; }
-
 .prev-panel {
   background-color: #444;
   grid-column: 1;
