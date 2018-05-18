@@ -342,19 +342,17 @@ nav.tabs {
       text-decoration: underline; }
 
 .next-panel, .prev-panel {
-  color: #eee;
   position: relative; }
   .next-panel a, .prev-panel a {
     position: absolute;
     top: 50%; }
-  .next-panel a:link, .next-panel a:visited, .prev-panel a:link, .prev-panel a:visited {
-    color: #ff9933; }
-  .next-panel a:hover, .prev-panel a:hover {
-    color: #b35900;
-    text-decoration: underline; }
 
-.next-panel a {
-  right: 5px; }
+.arrows {
+  fill: none;
+  stroke: #f93;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 6px; }
 
 h3.visit-link {
   color: #444;

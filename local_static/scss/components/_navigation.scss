@@ -95,7 +95,7 @@ nav.tabs {
 // for next, previous panel links
 
 .next-panel, .prev-panel {
-	color: $light-gray;
+	//color: $light-gray;
 	position: relative;
 
 	a {
@@ -103,18 +103,26 @@ nav.tabs {
 		top: 50%;
 	}
 
-	a:link, a:visited {
-		color: $accent-color;
-	}
+//	a:link, a:visited {
+//		color: $accent-color;
+//	}
 
-	a:hover {
-		color: $hover-color;
-		text-decoration: underline;
-	}
+//	a:hover {
+//		color: $hover-color;
+//		text-decoration: underline;
+//	}
+//}
+
+//.next-panel	a {
+//	right: 5px;
 }
 
-.next-panel	a {
-	right: 5px;
+.arrows {
+  fill: none;
+  stroke: #f93;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 6px;
 }
 
 // for visit link
