@@ -16,11 +16,11 @@ nav.tabs {
 		display: inline-block;
 		height: 60px;
 		line-height: $heading-line-height;
-		margin: 4px $base-spacing $small-spacing 0;
+		margin: 0px 5px 5px 5px;
 		padding: $small-spacing $base-spacing;
 		text-align: center;
 		vertical-align: top;
-		width: 240px;
+		width: 260px;
 		
 		a:link, a:visited {
 			color: white;
@@ -102,19 +102,6 @@ nav.tabs {
 		position: absolute;
 		top: 50%;
 	}
-
-//	a:link, a:visited {
-//		color: $accent-color;
-//	}
-
-//	a:hover {
-//		color: $hover-color;
-//		text-decoration: underline;
-//	}
-//}
-
-//.next-panel	a {
-//	right: 5px;
 }
 
 .arrows {
