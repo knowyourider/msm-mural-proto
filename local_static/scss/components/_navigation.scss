@@ -78,7 +78,7 @@ nav.tabs {
 		display: inline;
 		
 		span.no-more {
-			color: $light-gray;
+			color: darken($light-gray, 25%);
 		}
 
 		a:link, a:visited {
@@ -95,7 +95,6 @@ nav.tabs {
 // for next, previous panel links
 
 .next-panel, .prev-panel {
-	//color: $light-gray;
 	position: relative;
 
 	a {
@@ -105,7 +104,8 @@ nav.tabs {
 }
 
 .arrows {
-  fill: none;
+  fill: black;
+  fill-opacity: 0;
   stroke: #f93;
   stroke-linecap: round;
   stroke-miterlimit: 10;

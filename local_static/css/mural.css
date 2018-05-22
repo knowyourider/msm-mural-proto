@@ -334,7 +334,7 @@ nav.tabs {
   .slide-nav ul li {
     display: inline; }
     .slide-nav ul li span.no-more {
-      color: #eee; }
+      color: #aeaeae; }
     .slide-nav ul li a:link, .slide-nav ul li a:visited {
       color: #444; }
     .slide-nav ul li a:hover {
@@ -348,7 +348,8 @@ nav.tabs {
     top: 50%; }
 
 .arrows {
-  fill: none;
+  fill: black;
+  fill-opacity: 0;
   stroke: #f93;
   stroke-linecap: round;
   stroke-miterlimit: 10;
