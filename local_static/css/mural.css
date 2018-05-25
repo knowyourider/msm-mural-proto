@@ -385,16 +385,16 @@ h3.visit-link {
   padding: 0 3.2em;
   position: relative; }
 
+.prev-panel, .next-panel {
+  background-color: black;
+  grid-row: 2; }
+
 .prev-panel {
-  background-color: #444;
   grid-column: 1;
-  grid-row: 2;
   margin-right: 1em; }
 
 .next-panel {
-  background-color: black;
   grid-column: 3;
-  grid-row: 2;
   margin-left: 1em; }
 
 .home-nav {

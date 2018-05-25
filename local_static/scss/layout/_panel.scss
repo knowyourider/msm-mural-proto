@@ -19,17 +19,18 @@
 	//max-width: 95%;
 }
 
-.prev-panel {
-	background-color: $dark-gray;
-	grid-column: 1;
+.prev-panel, .next-panel {
+	background-color: black;
 	grid-row: 2;
+}
+
+.prev-panel {
+	grid-column: 1;
 	margin-right: 1em;
 }
 
 .next-panel {
-	background-color: black;
 	grid-column: 3;
-	grid-row: 2;
 	margin-left: 1em;
 }
 
