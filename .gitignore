@@ -18,6 +18,7 @@ robots.txt
 static/
 webstat/
 images/
+media/
 local_static/images
 pops/images
 
