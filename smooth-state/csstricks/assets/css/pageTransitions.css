@@ -20,6 +20,9 @@
 .m-scene .scene_element--fadeinright {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight; }
+  .m-scene .scene_element--fadeinleft {
+  -webkit-animation-name: fadeInLight;
+  animation-name: fadeInLight; }
 /* line 32, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element--delayed {
   -webkit-animation-delay: 0.25s;
@@ -41,7 +44,12 @@
   /* line 58, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
   .m-scene .scene_element--fadeinright-wide {
     -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight; } }
+    animation-name: fadeInRight; } 
+
+  .m-scene .scene_element--fadeinleft-wide {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft; } 
+  }
 
 .is-loading,
 .is-loading a {
