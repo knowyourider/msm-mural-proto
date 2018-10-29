@@ -21,8 +21,8 @@
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight; }
   .m-scene .scene_element--fadeinleft {
-  -webkit-animation-name: fadeInLight;
-  animation-name: fadeInLight; }
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
 /* line 32, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .m-scene .scene_element--delayed {
   -webkit-animation-delay: 0.25s;
