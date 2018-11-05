@@ -23,10 +23,7 @@ $(function(){
             $container.html($newContent);
           }
         },
-        blacklist: {
-          '.no-smoothState'
-          // 'pop_item'
-        }
+        blacklist: { '.no-smoothState' }
       },
       smoothState = $page.smoothState(options).data('smoothState');
 
