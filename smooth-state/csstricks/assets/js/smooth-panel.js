@@ -22,8 +22,7 @@ $(function(){
             // Inject the new content
             $container.html($newContent);
           }
-        },
-        blacklist: { '.no-smoothState' }
+        }
       },
       smoothState = $page.smoothState(options).data('smoothState');
 
