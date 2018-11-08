@@ -65,9 +65,14 @@ document.addEventListener("DOMContentLoaded", function() {
       }});
     },
 
+    // Add conditions for no next or prev - DB 11/2018
     updateLinks: function() {
-      PrevLink.href = this.newContainer.dataset.prev;
-      NextLink.href = this.newContainer.dataset.next;
+      // if (newContainer.dataset.prev != null) {
+        PrevLink.href = this.newContainer.dataset.prev;
+      // }
+      // if (newContainer.dataset.next != null) {
+        NextLink.href = this.newContainer.dataset.next;  
+      // }
     },
 
     getNewPageFile: function() {
