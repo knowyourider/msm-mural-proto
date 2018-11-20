@@ -1,5 +1,51 @@
 $(document).ready(function(){
 
+  // ---- SWIPE ----
+
+  // $(function() {      
+  //   //Enable swiping...
+  //   $("#swipable").swipe( {
+  //     //Generic swipe handler for all directions
+  //     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+  //       console.log("Ya'll swiped " + direction );
+  //       // $(this).text("You swiped " + direction );
+  //       $(".next").text("You swiped " + direction );
+  //       $(".next a").trigger("click");
+  //     },
+  //     //Default is 75px, set to 0 for demo so any distance triggers swipe
+  //      threshold:40
+  //   });
+  // });
+
+
+
+  // $("#swipable").swipe( {
+  //   //Generic swipe handler for all directions
+  //   swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+  //     console.log("Ya'll swiped " + direction );
+  //     // $(this).text("You swiped " + direction );
+  //     $(".next").text("You swiped " + direction );
+  //     $(".next a").trigger("click");
+  //   },
+  //   //Default is 75px, set to 0 for demo so any distance triggers swipe
+  //    threshold:40
+  // });
+
+  // $(document).on("swipe", "#swipable", function(event){
+  //   swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+  //     console.log("Ya'll swiped " + direction );
+  //     // $(this).text("You swiped " + direction );
+  //     $(".next").text("You swiped " + direction );
+  //     $(".next a").trigger("click");
+  //   },
+  //   //Default is 75px, set to 0 for demo so any distance triggers swipe
+  //    threshold:40
+
+  // });
+
+
+
+
   // ------- SLIM POPS ------
 
   // -- .pop_item --

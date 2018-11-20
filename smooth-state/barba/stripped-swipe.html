@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta http-equiv="x-ua-compatible" content="IE=9">
+
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        
+
+        <link href="css/touch-swipe.css" type="text/css" rel="stylesheet" />
+    
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> </script>
+
+
+
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <!-- <script type="text/javascript" src="js/swipe-main.js"></script> -->
+        
+        <title>touchSwipe</title>
+    </head>
+    <body>
+		<div class="container">
+			
+			<script id='code_1'>
+				$(function() {			
+					//Enable swiping...
+					$("#test").swipe( {
+						//Generic swipe handler for all directions
+						swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+							$(this).text("You swiped " + direction );	
+						},
+						//Default is 75px, set to 0 for demo so any distance triggers swipe
+					   threshold:0
+					});
+				});
+			</script>
+			
+			
+			<div id="test" class="box">Swipe me</div>
+			
+		</div>		
+   </body>
+</html>
