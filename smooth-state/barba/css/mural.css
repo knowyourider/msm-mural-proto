@@ -87,7 +87,13 @@ body {
   color: #eee;
   font-family: "futura-pt", sans-serif;
   font-size: 1.25em;
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin: 0; 
+}
+
+.barba-container {
+  margin: .25em;
+}
 
 h1,
 h2,
