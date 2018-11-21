@@ -1,0 +1,42 @@
+    * {
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+    }
+    
+    body {
+      background-color: #ffffff;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #4e84ba;
+      text-shadow: 1px 1px 10px rgba(40, 127, 214, 0.18);
+    }
+    
+    .swipe-detector {
+      width: 350px;
+      height: 200px;
+      background-color: #52a9e8;
+      margin: 65px auto 0;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 5px 5px 15px rgba(101, 166, 201, 0.34);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    .message {
+      display: inline-block;
+      color: #ffffff;
+      -webkit-user-select: none;
+      user-select: none;
+      
+    }
+  
