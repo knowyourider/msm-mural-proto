@@ -101,10 +101,10 @@ $("document").ready(function() {
     .on("swipeLeft.sd swipeRight.sd swipeUp.sd swipeDown.sd", function(event) {
       if (event.type === "swipeLeft") {
         // message.text("Swipe Left");
-        Barba.Pjax.goTo("db-panel-3.html");
+        Barba.Pjax.goTo("sd-panel-3.html");
       } else if (event.type === "swipeRight") {
         // message.text("Swipe Right");
-        Barba.Pjax.goTo("db-panel-2.html");
+        Barba.Pjax.goTo("sd-panel-2.html");
       } else if (event.type === "swipeUp") {
         message.text("Swipe Up");
       } else if (event.type === "swipeDown") {
