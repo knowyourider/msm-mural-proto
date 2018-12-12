@@ -18,15 +18,16 @@
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> </script>
 
-    <!-- <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
+    <script type="text/javascript" src="js/swipe-main.js"></script>
 
     <!-- <script type="text/javascript">
       if (typeof jQuery == 'undefined') {
           document.write(unescape("%3Cscript src='local_static/js/jquery-3.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
       }
     </script> -->
-    <script src="assets/js/mural-ts.js" type="text/javascript"></script>
+    <!-- <script src="assets/js/mural-proto.js" type="text/javascript"></script> -->
   
 
 </head>
@@ -38,7 +39,7 @@
 
 
 
-    <div class="wrapper barba-container" data-prev="index.html" data-next="sd-panel-3.html">
+    <div class="wrapper barba-container" data-prev="index.html" data-next="db-panel-3.html">
 
       <div class="home-nav">
         <a href="/">&larr; Home</a>
@@ -71,7 +72,7 @@
             
           
             
-              <a xlink:href="sd-panel-3.html">
+              <a xlink:href="db-panel-3.html">
                 <rect x="30" y="1" class="hotspot" width="13" height="27"/>
               </a>
             
@@ -151,7 +152,25 @@
 
     		<article>
 
-    <div class="panel-image">
+<!--       <script id='code_1'>
+        $(function() {      
+          //Enable swiping...
+          $("#swipable").swipe( {
+            //Generic swipe handler for all directions
+            swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+              console.log("Ya'll swiped " + direction );
+              // $(this).text("You swiped " + direction );
+              $(".next").text("You swiped " + direction );
+              Barba.Pjax.goTo("db-panel-3.html");
+            },
+            //Default is 75px, set to 0 for demo so any distance triggers swipe
+             threshold:40
+          });
+        });
+      </script>
+  -->     
+
+    <div class="panel-image" id="swipable">
 
       <svg  xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
@@ -192,6 +211,32 @@
             
       </svg>
 
+
+
+
+      <!-- <div class="container-not"> -->
+        
+<!--         <script id='code_1'>
+          $(function() {      
+            //Enable swiping...
+            $("#whammy").swipe( {
+              //Generic swipe handler for all directions
+              swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                console.log("Ya'll siped " + direction );
+                $(this).text("You swiped " + direction ); 
+              },
+              //Default is 75px, set to 0 for demo so any distance triggers swipe
+               threshold:0
+            });
+          });
+        </script>
+        
+        
+        <div id="whammy" class="box-not">Swipe me</div>
+ -->        
+      <!-- </div>     -->
+
+
     </div><!--/panel-image-->
 
 
@@ -222,7 +267,7 @@
 
       <div class="next-panel">
 
-        <a class="next" href="sd-panel-3.html">Next</a>
+        <a class="next" href="db-panel-3.html">Next</a>
         <!-- <svg  xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
           viewBox="0 0 217.2 1800">
@@ -230,7 +275,7 @@
           <image id="document" x="0" y="0" xlink:href="assets/images/child-labor-next.jpg" width="217.2" height="1800" />
 
           
-            <a class="next" href="sd-panel-3.html">
+            <a class="next" href="db-panel-3.html">
               <polyline class="arrows" points="154.24 803 184.24 833 154.24 863"/>
             </a>
           
@@ -248,9 +293,26 @@
     <script src="js/nextprev-panel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
     <script src="js/mural-ts.js" type="text/javascript"></script>
-
-    <script  src="js/swipe-detect-proto.js"></script>
- 
+<!-- 
+    <script id='code_1'>
+      $(function() {      
+        //Enable swiping...
+        $("#swipable").swipe( {
+          //Generic swipe handler for all directions
+          swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+            console.log("Ya'll swiped " + direction );
+            // $(this).text("You swiped " + direction );
+            $(".next").text("You swiped " + direction );
+            if(direction == "left") {
+              Barba.Pjax.goTo("db-panel-3.html"); 
+            }
+          },
+          //Default is 75px, set to 0 for demo so any distance triggers swipe
+           threshold:40
+        });
+      });
+    </script>
+ --> 
 
 </body>
 </html>
